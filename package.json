@@ -1,0 +1,20 @@
+{
+  "name": "w5-aviation",
+  "version": "1.0.0",
+  "description": "Website for W5 Aviation LLC",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Business"
+  ],
+  "author": "Philip Johnson Designs",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.4.2",
+    "gulp": "^4.0.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sourcemaps": "^2.6.4"
+  }
+}

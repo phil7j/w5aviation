@@ -1,0 +1,301 @@
+
+body {
+	background-color: white;
+}
+
+.jumbotron {
+	background-image: url("../images/privatejet.jpg");
+	background-size: cover;
+	
+	background-position: fixed;
+	background-position: 0% 55%;
+	margin-top: 5em;
+	margin-bottom: 0;
+	padding-bottom: 180px;
+	height: 700px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	opacity: 0.7;
+	border-radius: 0!important;
+}
+
+
+.navbar {
+	padding-top: 0;
+}
+
+.row {
+    margin-left: 0!important;
+    margin-right: 0!important;
+}
+
+/* Remove space between logo and links on Navbar */
+a.navbar-brand {
+	width: 100px;
+}
+.navbar-brand {
+	margin-bottom: -.5em;
+	padding-top: 0;
+}
+
+a.nav-link {
+	transition:all 0.2s;
+}
+
+a.nav-link:hover {
+	font-size: 16.5px;
+  }
+
+.logo {
+	width: 80%;
+}
+/* ----------------------------------------------*/
+
+.introtext {
+	font-family: 'Josefin Sans';
+	font-size: 40px;
+	font-weight: 800;
+	color: white;
+	margin-top: 1.5em;
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	
+}
+
+.introtext p {
+margin: 20px;
+}
+
+.secondtitle {
+	margin-top: 1em;
+}
+
+.section1 {
+	background-color: rgba(0, 0, 0, 0.07058823529411765);
+	padding: 0;
+
+}
+
+.aboutintro {
+	padding-top: 2em;
+}
+
+.pillnav {
+	margin: 1em;
+}
+
+.seo {
+	margin: 0!important;
+	padding: 0!important;
+}
+/*\\\\\\\\\\\\\\\\\\\\\\\NAV PILL STYLES\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+.nav-pills > a.active {
+  background-color: #ededed!important;
+  color: rgb(169, 32, 49) !important;
+  border: 1px solid rgb(169, 32, 49);
+
+}
+
+.nav-pills > a {
+  color: rgb(169, 32, 49) !important;
+  
+}
+
+.navpills > a:hover {
+	background-color: #dc3545 !important;
+	color: white !important;
+	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.nav-link-color {
+  color: ##dc3545 !important;
+  background-color: #ededed!important;
+}
+/*\\\\\\\\\\\\\\\\\\\\\END NAV PILL STYLES\\\\\\\\\\\\\\*/
+
+.stamplogo {
+	width: 65%;
+	margin: auto;
+	display: block;
+	
+}
+
+.experience_list {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.services h1 {
+	font-family: "Josefin Sans";
+	letter-spacing: ;
+	font-size: 60px;
+	font-weight: 600;
+	color: white;
+}
+
+.services {
+	background-color: rgb(114, 102, 102);
+	
+}
+.section2 {
+	background-color: white;
+	padding: 0;
+}
+
+
+
+.section3 {
+	background-color: rgba(0, 0, 0, 0.07058823529411765);
+	padding: 0;
+}
+
+div.section3 h1 {
+	font-family: 'Josefin Sans';
+	color: black;
+}
+
+div.section2 h1 {
+	font-family: 'Josefin Sans';
+	color: black;
+}
+
+#contact {
+	background-color: rgb(114, 102, 102);
+	padding: 0;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.material-icons.md-48 { 
+
+	font-size: 48px; 
+	margin-top: 1em;
+}
+
+.info {
+	padding: 1em;
+}
+
+i.sorticon1 {
+	font-size: 60px;
+	margin-top: 0.4em;
+	color: orange;
+	z-index: -1;
+}
+
+
+i.sorticon2 {
+	font-size: 60px;
+	margin-top: 0.4em;
+	color: green;
+	z-index: -1;
+}
+
+i.sorticon3 {
+	font-size: 60px;
+	margin-top: 0.4em;
+	color: blue;
+	z-index: -1;
+}
+.cardshadow {
+	
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.tilebgimage {
+	
+	overflow: hidden;
+	position: relative;
+	height: 170px;
+}
+
+.tiletransparent {
+	background-color: rgba(255, 255, 255, 0.35);
+	padding: 1em 1em 0 1em;
+}
+
+.tiletitle {
+	font-size: 1.5rem!important;
+	color: black;
+	font-weight: 600;
+}
+
+img.rounded-circle {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-img-top {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	opacity: 1;
+}
+
+hr {
+	width: 70%;
+	background-color: black;
+}
+
+.contacttitle {
+	font-family: 'Josefin Sans';
+}
+
+
+.lukasonchair {
+object-fit: cover;
+width: auto;
+height: 32vw;
+min-width: 150px;
+min-height: 235px;
+border-radius: 50%;
+}
+
+a.linkhover {
+	color: white;
+}
+
+a.linkhover:hover {
+	text-decoration: none;
+	color: rgb(76, 65, 65);
+}
+
+.icon {
+	font-size: 12px!important;
+}
+
+.footer {
+	background-color: rgb(104, 90, 90);
+
+}
+
+div.credit {
+	color: white;
+	
+	text-align: right;
+	font-size: 10px;
+	padding-top: 2em;
+	padding-bottom: 1.5em;
+	font-weight: bold;
+
+}
+
+div.privacy-link {
+	font-size: 12px;
+	padding-top: 2em;
+	padding-bottom: 1.5em;
+	color: white;
+	
+	
+}
+
+div.privacy-link a {
+	color: white;
+	font-weight: bold;
+}
+
+div.privacy-link a:hover {
+	color: rgb(35, 34, 34);
+	text-decoration: none;
+}
+

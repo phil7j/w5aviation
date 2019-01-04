@@ -1,0 +1,86 @@
+body {
+	background-color: rgba(0, 0, 0, 0.07058823529411765);
+}
+
+.navbar {
+	padding-top: 0;
+	/*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+}
+
+/* Remove space between logo and links on Navbar */
+a.navbar-brand {
+	width: 100px;
+}
+.navbar-brand {
+	margin-bottom: -.5em;
+	padding-top: 0;
+}
+
+a.nav-link {
+	transition:all 0.2s;
+}
+
+a.nav-link:hover {
+	font-size: 17.5px;
+  }
+
+.logo {
+	width: 80%;
+}
+
+div.runway {
+	background-image: url("../images/runway.jpg");
+	background-repeat: no-repeat;
+	width: auto;
+	height: 250px;
+	margin-top: 81px;
+	background-position: center;
+}
+
+.privacy-text {
+
+	/*padding: 10% 20%;*/
+}
+
+p,ul {
+	font-size: 17px!important;
+}
+
+.icon {
+	font-size: 12px!important;
+}
+
+.footer {
+	background-color: rgb(104, 90, 90);
+
+}
+
+div.credit {
+	color: white;
+	
+	text-align: right;
+	font-size: 10px;
+	padding-top: 2em;
+	padding-bottom: 1.5em;
+	font-weight: bold;
+
+}
+
+div.privacy-link {
+	font-size: 12px;
+	padding-top: 2em;
+	padding-bottom: 1.5em;
+	color: white;
+	
+	
+}
+
+div.privacy-link a {
+	color: white;
+	font-weight: bold;
+}
+
+div.privacy-link a:hover {
+	color: rgb(35, 34, 34);
+	text-decoration: none;
+}
