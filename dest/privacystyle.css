@@ -27,7 +27,6 @@ a.nav-link:hover {
 .logo {
 	width: 80%;
 }
-
 div.runway {
 	background-image: url("../images/runway.jpg");
 	background-repeat: no-repeat;
@@ -37,13 +36,8 @@ div.runway {
 	background-position: center;
 }
 
-.privacy-text {
-
-	/*padding: 10% 20%;*/
-}
-
-p,ul {
-	font-size: 17px!important;
+div.privacy-text {
+	font-size: 17px;
 }
 
 .icon {
@@ -55,22 +49,39 @@ p,ul {
 
 }
 
-div.credit {
-	color: white;
-	
-	text-align: right;
-	font-size: 10px;
-	padding-top: 2em;
-	padding-bottom: 1.5em;
-	font-weight: bold;
+div.footer div.col.text-center {
+	padding-left: 0;
+	padding-right: 0;
+}
 
+div.credit {
+	color: black;
+	text-align: center;
+	font-size: 12px;
+	padding-top: 0px;
+	padding-bottom: 0;
+	padding-right: 0;
+	
+
+}
+
+div.credit a{
+	color: black;
+	text-decoration: none;
+	font-weight: 800;
+}
+
+div.credit a:hover{
+	font-weight: 700;
 }
 
 div.privacy-link {
 	font-size: 12px;
-	padding-top: 2em;
-	padding-bottom: 1.5em;
+	padding-top: 20px;
+	padding-bottom: 0;
 	color: white;
+	padding-left: 0;
+	padding-right: 0;
 	
 	
 }
@@ -83,4 +94,9 @@ div.privacy-link a {
 div.privacy-link a:hover {
 	color: rgb(35, 34, 34);
 	text-decoration: none;
+}
+
+hr.footer-hr {
+	background-color: white;
+	width: 50%;
 }
