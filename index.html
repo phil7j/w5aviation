@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 
 <head>
 	<!-- Cookie Consent -->
@@ -29,12 +29,12 @@
 
 </head>
 
-<body>
+<body id="home">
 
 	<!-- Navigation Bar  -->
 	<nav class="navbar navbar-expand-lg navbar-light border fixed-top" style="background-color: white;">
 		<div class="container">
-			<a class="navbar-brand mb-1 mt-1" href="#"><img src="images/w5logo.jpg" class="logo" alt="Aviation Consulting, Records Management, Lukas Weiss"></a>
+			<a class="navbar-brand mb-1 mt-1" onclick="animateScrollTo(document.querySelector('#home'))"><img src="images/w5logo.jpg" class="logo" alt="Aviation Consulting, Records Management, Lukas Weiss"></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 			 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -43,22 +43,22 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav smooth-scroll">
 					<li class="nav-item">
-						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+						<a class="nav-link" onclick="animateScrollTo(document.querySelector('#home'))">Home <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item px-lg-4">
-						<a class="nav-link" href="#aboutus">About Us</a>
+						<a class="nav-link" onclick="animateScrollTo(document.querySelector('#aboutus'),{offset: -50})">About Us</a>
 					</li>
 					<li class="nav-item pr-lg-4">
-						<a class="nav-link" href="#ARM">Aircraft Records Management</a>
+						<a class="nav-link" onclick="animateScrollTo(document.querySelector('#ARM'),{offset: 0})">Aircraft Records Management</a>
 					</li>
 					<li class="nav-item pr-lg-4">
-						<a class="nav-link" href="#consult">Consulting Solutions</a>
+						<a class="nav-link" onclick="animateScrollTo(document.querySelector('#consult'),{offset: -40})">Consulting Solutions</a>
 					</li>
 				</ul>
 				<ul class="navbar-nav">
 
 					<li class="nav-item">
-						<a class="nav-link" href="#contact">Contact</a>
+						<a class="nav-link" onclick="animateScrollTo(document.querySelector('#contact'),{offset: -40})">Contact</a>
 					</li>
 			</div>
 			</ul>
@@ -67,41 +67,16 @@
 		</div>
 	</nav>
 	<!-- JUMBOTRON -->
-	<div class="jumbotron text-center container-fluid pl-0 pr-0">
+	<div class="b-lazy jumbotron text-center container-fluid pl-0 pr-0" data-src="images/privatejet.jpg">
 
-		<!-- <div class="row justify-content-center introtext">
-
-				 	<div class="col-lg-3 col-xs-12 p-0">
-				 	</div>
-				 	<div class="col-lg-3 col-xs-12 p-0">
-					<p class="text-center">
-						Your Challenge.
-					</p>
-
-					</div>
-					<div class="col-lg-3 col-xs-12 p-0">
-						<p class="text-center">Our Solution.</p>
-					</div>
-					
-					<div class="col-lg-3 col-xs-12 p-0">
-					</div>
-					
-				</div> -->
 		<div class="flex-container introtext">
 			<p>Your Challenge.</p>
 			<p>Our Solution.</p>
-
 		</div>
-
 
 	</div>
 
-
-
-
 	<!-- \\\\\\\\\\\\\\\\\\\ABOUT US SECTION\\\\\\\\\\\ -->
-
-
 
 	<div id="aboutus" class="section1 pt-5">
 
@@ -140,7 +115,7 @@
 						<div class="tab-pane fade show active p-2" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
 							<div class="row">
 								<div class="col-md-4 mb-5 text-center">
-									<img class="mb-2 pill-img" src="images/Lukas_2.jpg" alt="Lukas Weiss, Director and owner">
+									<img class="mb-2 pill-img b-lazy" src="images/placeholder.gif" data-src="images/Lukas_2.jpg" alt="Lukas Weiss, Director and owner">
 									<h2>Lukas Weiss</h2>
 									<h5>Director</h3>
 
@@ -157,7 +132,7 @@
 								</div>
 
 								<div class="col-md-4 mb-5 text-center">
-									<img class="mb-2 pill-img" src="images/Brigitta.jpg" alt="Brigitta Weiss, Administrator">
+									<img class="mb-2 pill-img b-lazy" src="images/placeholder.gif"  data-src="images/Brigitta.jpg" alt="Brigitta Weiss, Administrator">
 									<h2>Brigitta Weiss</h2>
 									<h5>Administrator</h5>
 									<button type="button" class="btn-outline-danger btn" data-toggle="collapse" data-target="#bio2">Bio
@@ -170,7 +145,7 @@
 										her department in the family business with the same devotion and efficiency.</p>
 								</div>
 								<div class="col-md-4 mb-5 text-center">
-									<img class="mb-2 pill-img" src="images/cornel2.jpg" alt="Cornel Rub, Consultant">
+									<img class="mb-2 pill-img b-lazy" src="images/placeholder.gif" data-src="images/cornel2.jpg" alt="Cornel Rub, Consultant">
 									<h2>Cornel Rub</h2>
 									<h5>Consultant</h5>
 									<button type="button" class="btn-outline-danger btn" data-toggle="collapse" data-target="#bio3">Bio
@@ -297,7 +272,7 @@
 					<!-- \\\\\\\Pic and intro\\\\\\\\\ -->
 					<div class="card bg-white mb-2 cardshadow">
 						<div class="tilebgimage">
-							<img class="card-img" alt="Card image" src="images/boxes.jpg" style="height: auto; width: auto;">
+							<img class="card-img b-lazy" alt="Card image" src="images/placeholder.gif" data-src="images/boxes.jpg" style="height: auto; width: auto;">
 							<div class="card-img-overlay tiletransparent text-center">
 								<p class="card-text"><i class="material-icons sorticon1">sort</i></p>
 
@@ -324,7 +299,7 @@
 					<!-- \\\\\\\Pic and intro\\\\\\\\\ -->
 					<div class="card bg-white mb-2 cardshadow">
 						<div class="tilebgimage">
-							<img class="card-img" alt="Card image" src="images/sort.jpg">
+							<img class="card-img b-lazy" alt="Card image" src="images/placeholder.gif" data-src="images/sort.jpg">
 							<div class="card-img-overlay tiletransparent text-center">
 								<p class="card-text"><i class="material-icons sorticon2">verified_user</i></p>
 
@@ -349,7 +324,7 @@
 					<!-- \\\\\\\Pic and intro\\\\\\\\\ -->
 					<div class="card bg-white mb-2 cardshadow">
 						<div class="tilebgimage">
-							<img class="card-img" alt="Card image" src="images/digitalize.jpg" style="height: auto; width: 100%; position: relative; bottom: 20%; ">
+							<img class="card-img b-lazy" alt="Card image" src="images/placeholder.gif" data-src="images/digitalize.jpg" style="height: auto; width: 100%; position: relative; bottom: 20%; ">
 							<div class="card-img-overlay tiletransparent text-center">
 								<p class="card-text"><i class="material-icons sorticon3">cloud_upload</i></p>
 
@@ -397,7 +372,7 @@
 				<!-- Info Card 1 -->
 				<div class="col-md-6">
 					<div class="card w-70 cardshadow mb-3">
-						<img class="card-img-top" src="images/cockpit.jpg" alt="Card image cap">
+						<img class="card-img-top b-lazy" src="images/placeholder.gif" data-src="images/cockpit.jpg" alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title text-center">Completion and Refurbishment Management
 								<hr>
@@ -416,7 +391,7 @@
 				<!-- Info Card 2 -->
 				<div class="col-md-6">
 					<div class="card w-70 mb-3 cardshadow">
-						<img class="card-img-top" src="images/audit.jpg" alt="Card image cap">
+						<img class="card-img-top b-lazy" src="images/placeholder.gif" data-src="images/audit.jpg" alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title test text-center">Aircraft Technical Records Audit
 								<hr>
@@ -542,6 +517,19 @@
 		 crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 		 crossorigin="anonymous"></script>
+		 <script src="app.js"></script>
+		 <script src="blazy.min.js"></script>
+		 <script src="animated-scroll-to.js"></script>
+    <script>
+        (function() {
+            // Initialize
+			var bLazy = new Blazy({
+				offset: 0,
+				
+			});
+
+        })();
+    </script>
 </body>
 
 </html>

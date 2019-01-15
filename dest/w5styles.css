@@ -4,7 +4,7 @@ body {
 }
 
 .jumbotron {
-	background-image: url("../images/privatejet.jpg");
+	/* background-image: url("../images/privatejet.jpg"); */
 	background-size: cover;
 	background-position: 0% 55%;
 	margin-top: 5em;
@@ -12,7 +12,7 @@ body {
 	padding-bottom: 180px;
 	height: 700px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	opacity: 0.7;
+	opacity: 0.7;!important
 	border-radius: 0!important;
 }
 
@@ -327,4 +327,18 @@ div.privacy-link a:hover {
 hr.footer-hr {
 	background-color: white;
 	width: 50%;
+}
+
+/* Lazy Load Image Transition */
+
+.b-lazy {
+	-webkit-transition: opacity 1000ms ease-in-out;
+	   -moz-transition: opacity 1000ms ease-in-out;
+		 -o-transition: opacity 1000ms ease-in-out;
+			transition: opacity 1000ms ease-in-out;
+			 max-width: 100%;
+			   opacity: 0;
+}
+.b-lazy.b-loaded {
+			   opacity: 1;
 }
