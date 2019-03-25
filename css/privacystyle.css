@@ -17,12 +17,8 @@ a.navbar-brand {
 }
 
 a.nav-link {
-	transition:all 0.2s;
+	transition:color 0.1s;
 }
-
-a.nav-link:hover {
-	font-size: 17.5px;
-  }
 
 .logo {
 	width: 80%;
@@ -30,10 +26,11 @@ a.nav-link:hover {
 div.runway {
 	background-image: url("../images/runway.jpg");
 	background-repeat: no-repeat;
-	width: auto;
-	height: 250px;
-	margin-top: 81px;
-	background-position: center;
+	max-width: 772px;
+	height: 300px;
+	margin: 81px auto 0 auto;
+	background-position: top;
+	background-size: cover;
 }
 
 div.privacy-text {
