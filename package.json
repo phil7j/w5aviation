@@ -12,10 +12,6 @@
   "author": "Philip Johnson Designs",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^9.4.2",
-    "gulp": "^4.0.0",
-    "gulp-postcss": "^8.0.0",
-    "gulp-sourcemaps": "^2.6.4",
     "prettier": "2.2.1"
   }
 }
