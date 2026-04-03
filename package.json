@@ -4,7 +4,14 @@
   "description": "Website for W5 Aviation LLC",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run test:e2e",
+    "pw:install": "PLAYWRIGHT_BROWSERS_PATH=0 playwright install chromium webkit",
+    "test:e2e": "PLAYWRIGHT_BROWSERS_PATH=0 playwright test",
+    "test:e2e:ui": "PLAYWRIGHT_BROWSERS_PATH=0 playwright test --ui",
+    "test:e2e:headed": "PLAYWRIGHT_BROWSERS_PATH=0 playwright test --headed",
+    "test:e2e:mobile": "PLAYWRIGHT_BROWSERS_PATH=0 playwright test --project=\"Mobile Chrome (Pixel 7)\" --project=\"Mobile Safari (iPhone 14)\" --project=\"Mobile Safari (iPhone SE)\" --project=\"Mobile Chrome (iPhone SE)\"",
+    "test:e2e:desktop": "PLAYWRIGHT_BROWSERS_PATH=0 playwright test --project=\"Desktop Chrome\" --project=\"Desktop Safari\"",
+    "test:e2e:report": "PLAYWRIGHT_BROWSERS_PATH=0 playwright show-report"
   },
   "keywords": [
     "Business"
@@ -12,6 +19,7 @@
   "author": "Philip Johnson Designs",
   "license": "ISC",
   "devDependencies": {
+    "@playwright/test": "^1.59.1",
     "prettier": "2.2.1"
   }
 }
