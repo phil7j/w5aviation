@@ -1,0 +1,15 @@
+[build]
+  publish = "."
+  command = "echo \"Static site deploy (no build step)\""
+
+[build.environment]
+  NODE_VERSION = "20"
+  RUBY_VERSION = "3.2.2"
+
+[context.deploy-preview.environment]
+  NODE_VERSION = "20"
+  RUBY_VERSION = "3.2.2"
+
+[context.branch-deploy.environment]
+  NODE_VERSION = "20"
+  RUBY_VERSION = "3.2.2"
